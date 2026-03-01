@@ -9,8 +9,35 @@ v2.0 | 20110126
 License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, 
-code, del, dfn, em, img, ins, kbd,
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
 q,
 s,
 samp,
@@ -279,12 +306,22 @@ table {
     background-color: var(--blue);
     color: var(--white);
     display: inline-block;
-    padding: 0.75rem 1.5rem;
+    padding: 1rem 1.5rem;
     cursor: pointer;
     margin-top: 1rem;
     font-weight: bold;
     border-radius: 10px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
 }
+
+.request-button:hover {
+    background-color: var(--red);
+}
+
+/* .request-button a {
+    color: var(--white);
+} */
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
 .svg-logo {
