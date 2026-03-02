@@ -414,6 +414,7 @@ table {
 .results {
     background-color: var(--blue);
     color: var(--white);
+    padding-bottom: 15px;
 }
 
 .results h2 {
@@ -438,7 +439,47 @@ table {
     font-size: .8rem;
     font-family: var(--font);
     line-height: 1.4;
-        margin: 20px;
+    margin: 20px;
+}
+
+.profits {
+    background-color: var(--blue);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.profits-title {
+    color: var(--white);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.profits-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.profits-table th {
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid var(--charcoal);
+}
+
+.profits-table td {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--charcoal);
+}
+
+.profits-table .gray-row {
+    background-color: var(--charcoal);
+}
+
+.growth {
+    margin-left: 20px;
 }
 
 #bar-chart {
