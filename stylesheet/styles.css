@@ -213,7 +213,7 @@ label span:after {
     top: -.75rem;
 }
 
-input {
+nav input[type="checkbox"] {
     display: none;
 }
 
@@ -532,6 +532,81 @@ table {
     animation: stepUp 1s ease-in-out forwards;
 }
 
+.contact-section {
+    background-color: var(--black);
+    padding: 2rem 1rem;
+    font-family: var(--font);
+}
+
+.contact {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-title {
+    color: var(--white);
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-p {
+    color: var(--white);
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.contact-form label {
+    color: var(--white);
+    font-size: 0.9rem;
+}
+
+.contact-form input, .contact-form textarea {
+    background-color: var(--white);
+    border: none;
+    padding: 0.75rem;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid var(--blue);
+}
+
+.submit-button {
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.footer {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.footer a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
 
 /* MEDIA QUERIES (MEDIUM) */
 

@@ -144,21 +144,32 @@
             </div>
         </div>
     </div>
-    <h2>Contact Us</h2>
-    Want to take your business to the next level? Get in touch with our elite team today.
+    <section class="contact-section">
+    <div class="contact">
+        <h2 class="contact-title">Contact Us</h2>
+        <p class="contact-p">Want to take your business to the next level? Get in touch with our elite team today.</p>
 
-    Full Name
+        <form class="contact-form">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="">
 
-    Email Address
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="">
 
-    Company Name
+            <label for="company">Company Name</label>
+            <input type="text" id="company" name="company" placeholder="">
 
-    Industry
+            <label for="industry">Industry</label>
+            <input type="text" id="industry" name="industry" placeholder="">
 
-    How can we help you?
-
-    Submit
-
-    For educational purposes only.
-    Email: info@vaanguard.com
-    Phone: 480.123.4567
+            <label for="message">How can we help you?</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+</section>
+    <footer class="footer">
+        <p>For educational purposes only.</p>
+        <p>Email: <a href="mailto:info@vaanguard.com">info@vaanguard.com</a></p>
+        <p>Phone: 480.123.4567</p>
+    </footer>
