@@ -489,7 +489,7 @@ table {
     justify-content: space-around;
     gap: 1rem;
     height: 300px;
-    width: 100%;
+    width: 90%;
     max-width: 800px;
     padding: 1rem;
     position: relative;
@@ -501,7 +501,7 @@ table {
     background: var(--charcoal);
     border-radius: 10px;
     position: relative;
-    transition: ;
+    transition: height 0.5s ease-out;
     height: 0;
 }
 
@@ -566,7 +566,8 @@ table {
     font-size: 0.9rem;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     background-color: var(--white);
     border: none;
     padding: 0.75rem;
@@ -609,23 +610,82 @@ table {
 }
 
 /* MEDIA QUERIES (MEDIUM) */
+@media screen and (min-width: 800px) {
+    #results {
+        grid-template-columns: 1fr 1fr;
+    }
 
-#results {
-    grid-template-columns: 1fr 1fr;
+    .profits {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .profits-left, .profits-right {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .profits-table {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .bar-chart {
+        width: 50%;
+    }
+
+    .offer-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    #bar-chart {
+        width: 100%;
+    }
+
 }
-
-.results-container {
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.results-table {
-    width: 50%;
-}
-
-.bar-chart {
-    width: 50%;
-}
-
 
 /* MEDIA QUERIES (LARGE) */
+@media screen and (min-width: 1024px) {
+    #results {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .profits {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .profits-left, .profits-right {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .profits-table {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .bar-chart {
+        width: 50%;
+    }
+
+    .offer-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    #bar-chart {
+        width: 100%;
+    }
+}
