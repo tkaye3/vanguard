@@ -648,6 +648,13 @@ table {
         width: 100%;
     }
 
+    .innovation-background {
+        height: 60vh;
+    }
+
+    .contact {
+        max-width: 700px;
+    }
 }
 
 /* MEDIA QUERIES (LARGE) */
@@ -687,5 +694,13 @@ table {
     
     #bar-chart {
         width: 100%;
+    }
+
+    .innovation-background {
+        height: 60vh;
+    }
+
+    .contact {
+        max-width: 900px;
     }
 }
