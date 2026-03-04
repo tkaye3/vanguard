@@ -301,7 +301,7 @@ table {
 }
 
 .innovation h2 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
     color: var(--white);
     font-weight: bold;
@@ -357,7 +357,7 @@ table {
 
 .expertise p {
     color: var(--black);
-    font-size: .9rem;
+    font-size: 1rem;
     font-family: var(--font);
     line-height: 1.4;
     width: 90%;
@@ -379,7 +379,7 @@ table {
 .offer h3 {
     color: var(--white);
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: var(--font);
     padding: 10px;
     width: 90%;
@@ -388,7 +388,7 @@ table {
 
 .offer p {
     color: var(--white);
-    font-size: .9rem;
+    font-size: 1rem;
     font-family: var(--font);
     padding: 10px 0;
     line-height: 1.4;
@@ -423,7 +423,7 @@ table {
     font-size: 1.5rem;
     font-family: var(--font);
     padding: 15px 0;
-    margin: 20px;
+    margin: 30px;
 }
 
 .results h3 {
@@ -436,10 +436,12 @@ table {
 
 .results p {
     color: var(--white);
-    font-size: .8rem;
+    font-size: 1rem;
     font-family: var(--font);
     line-height: 1.4;
     margin: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .profits {
@@ -702,5 +704,21 @@ table {
 
     .contact {
         max-width: 900px;
+    }
+
+    .contact-form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .contact-form textarea {
+        grid-column: 1;
+    }
+
+    .contact-form button {
+        grid-column: 2;
+        align-self: center;
+        margin-top: -5.3rem;
     }
 }
